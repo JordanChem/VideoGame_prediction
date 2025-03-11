@@ -47,7 +47,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Titre
-st.markdown('<h1 class="stTitle">Analyse prédictive des ventes</h1>',unsafe_allow_html=True)
+st.markdown('<h1 class="stSubheader">Analyse prédictive des ventes</h1>',unsafe_allow_html=True)
 
 # Load data
 with st.spinner('🔄 Chargement des données en cours...'):
