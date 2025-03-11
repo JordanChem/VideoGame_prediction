@@ -117,11 +117,10 @@ if predict_button:
         <div style='background: linear-gradient(120deg, rgba(52, 148, 230, 0.1), rgba(236, 106, 173, 0.1));
                     padding: 2em; border-radius: 20px; margin: 2em 0; text-align: center;
                     box-shadow: 0 10px 20px rgba(0,0,0,0.2);'>
-            <h2 style='font-size: 4em; background: linear-gradient(120deg, #3494e6, #ec6ead);
-                       -webkit-background-clip: text; -webkit-text-fill-color: transparent;'>
+            <h2 style='font-size: 4em; color: #3494e6;'>
                 {formatted_prediction}
             </h2>
-            <h3 style='color: #e0e0e0; margin: 0;'>unit&#233;s</h3>
+            <h3 style='color: #666666; margin: 0;'>unités</h3>
         </div>
     """, unsafe_allow_html=True)
 
