@@ -12,7 +12,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Style CSS personnalisé avec animations et effets modernes
+# Style CSS personnalisé
 st.markdown("""
     <style>
     .main {
@@ -27,7 +27,6 @@ st.markdown("""
         letter-spacing: 2px;
         font-size: 3em;
         margin-bottom: 1em;
-        animation: fadeIn 1.5s ease-in;
     }
     .stSubheader {
         color: #e0e0e0 !important;
@@ -37,35 +36,20 @@ st.markdown("""
         letter-spacing: 3px;
         margin: 2em 0;
     }
-    .element-container {
-        transition: all 0.3s ease;
-    }
-    .element-container:hover {
-        transform: translateY(-5px);
-    }
     .stButton>button {
         background: linear-gradient(120deg, #3494e6, #ec6ead);
         color: white;
         border: none;
         padding: 0.5em 2em;
         border-radius: 25px;
-        transition: all 0.3s ease;
-    }
-    .stButton>button:hover {
-        transform: scale(1.05);
-        box-shadow: 0 5px 15px rgba(52, 148, 230, 0.3);
-    }
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(-20px); }
-        to { opacity: 1; transform: translateY(0); }
     }
     </style>
 """, unsafe_allow_html=True)
 
-# Titre avec animation
+# Titre
 st.markdown('<h1 class="stTitle">Analyse prédictive des ventes &#10024;</h1>', unsafe_allow_html=True)
 
-# Load data avec animation de chargement personnalisée
+# Load data
 with st.spinner('🔄 Chargement des données en cours...'):
     df = pd.read_excel('video_game_data.xlsx')
 st.success('🎉 Données chargées avec succès!')
