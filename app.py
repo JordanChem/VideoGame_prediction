@@ -47,7 +47,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Titre
-st.markdown('<h1 class="stTitle">Analyse prédictive des ventes &#10024;</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="stTitle">Analyse prédictive des ventes</h1>',unsafe_allow_html=True)
 
 # Load data
 with st.spinner('🔄 Chargement des données en cours...'):
@@ -112,7 +112,7 @@ if predict_button:
     formatted_prediction = "{:,.0f}".format(final_prediction * 1000000).replace(",", " ")
 
     # Affichage stylé de la prédiction finale
-    st.markdown("<h2 class='stSubheader'>Pr&#233;vision des ventes</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 class='stSubheader'>🎯 Prévision des ventes</h2>", unsafe_allow_html=True)
     st.markdown(f"""
         <div style='background: linear-gradient(120deg, rgba(52, 148, 230, 0.1), rgba(236, 106, 173, 0.1));
                     padding: 2em; border-radius: 20px; margin: 2em 0; text-align: center;
